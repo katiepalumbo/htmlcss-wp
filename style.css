@@ -8,9 +8,35 @@
 }
 
 header {
+    position: relative;
     height: 80px;
     background-color: #e46ee4;
 }
+
+/*regole menu*/
+
+.menu ul {
+    position: absolute;
+    bottom: 0;
+}
+
+.menu li {
+    display: inline;
+    list-style: none;
+    text-transform: uppercase;
+    
+}
+
+.menu li a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav { 
+    margin-bottom: 100px;
+}
+
+
 
 main .top {
     height: 250px;
