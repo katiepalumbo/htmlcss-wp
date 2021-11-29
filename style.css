@@ -23,8 +23,6 @@ header {
 }
 
 
-
-
 /*regole menu*/
 
 .menu ul {
@@ -60,9 +58,13 @@ main .top {
     height: 300px;
     background-color: #fff);
     margin-top: 20px;
-    background-image: url(img/banner.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+
+}
+
+main .top img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 5px;
 }
 
@@ -78,14 +80,17 @@ main .top {
     width: 100%;
     height: 100%;
     background-color: #000;
-    background-size: contain;
+    object-fit: cover;
     opacity: 0.2;
-    border-radius: inherit;
+    border-radius: 5px;
 }
 
 /* regole text top */
 
 .top h1 {
+    position: absolute;
+    top: 60%;
+    left: 0;
     vertical-align: bottom;
     font-style: normal;
     color: #fff;
@@ -104,8 +109,21 @@ main .bottom {
     top: 0;
     height: 40px;
     width: 100%;
-    background-color: #7fc2ce;
+    background-color: #fff;
 
+}
+
+.bottom .mini-header h3 {
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom .mini-header p {
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    color: lightgrey;
 }
 
 .bottom .left {
@@ -117,6 +135,33 @@ main .bottom {
     float: left;
     margin: 2% 2% 2% 0;
     height: 82%
+}
+
+.bottom .left .left-img {
+    height: 100px;
+    width: 100%;
+}
+
+.bottom .left .left-img img {
+    height: 100px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.bottom .left .left-text {
+    padding: 0;
+    margin: 0;
+}
+
+.bottom .left .left-text p {
+    position: absolute;
+    left: 0;
+    top: 100;
+    padding: 0%;
+    margin: 0%;
+    font-size: 8;
+    object-fit: contain;
 }
 
 .bottom .middle {
