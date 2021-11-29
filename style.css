@@ -9,6 +9,13 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
+p {
+    padding: 0%;
+    margin: 0%;
+    font-size: 0.6em;
+    font-weight: 100;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -97,18 +104,29 @@ main .top img {
 
 /* regole text top */
 
-.top h1 {
+.top h3 {
     position: absolute;
     top: 60%;
-    left: 0;
-    vertical-align: bottom;
+    left: 5%;
+    width: 50%;
     font-style: normal;
     color: #fff;
+    font-weight: 300;
 }
+
+.top p {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    width: 50%;
+    color: #fff;
+
+}
+
 
 main .bottom {
     height: 400px;
-    background-color: rgb(3, 120, 199);
+    background-color: #fff;
     margin-top: 20px;
     position: relative;
 }
@@ -127,6 +145,7 @@ main .bottom {
     vertical-align: top;
     padding: 0;
     margin: 0;
+    font-weight: 600;
 }
 
 .bottom .mini-header p {
@@ -140,7 +159,7 @@ main .bottom {
     position: absolute;
     left: 0;
     top: 40px;
-    background-color: #7fc2ce;
+    background-color: #fff;
     width: 20%;
     float: left;
     margin: 2% 2% 2% 0;
@@ -155,7 +174,7 @@ main .bottom {
 }
 
 .bottom .left .left-img img {
-    height: 100px;
+    height: 100%;
     width: 100%;
     border-radius: 5px;
     object-fit: cover;
@@ -163,39 +182,29 @@ main .bottom {
     margin: 0;
 }
 
-.bottom .left .left-text {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-}
 
 .bottom .text h4 {
     position: absolute;
-    top: 110px;
+    top: 38%;
     padding: 0;
     margin: 0;
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 100;
 }
 
 .bottom .text p {
     position: absolute;
     left: 0;
-    top: 130px;
-    padding: 0%;
-    margin: 0%;
-    font-size: 0.6em;
-    font-weight: 100;
+    top: 43%;
     object-fit: contain;
+    color: lightgrey;
 }
 
 .bottom .middle {
     position: absolute;
     left: 21%;
     top: 40px;
-    background-color: #7fc2ce;
+    background-color: #fff;
     width: 54%;
     height: 82%;
     float: left;
@@ -203,12 +212,12 @@ main .bottom {
 }
 
 .bottom .middle .middle-img {
-    height: 100px;
+    height: 35%;
     width: 100%;
 }
 
 .bottom .middle .middle-img img {
-    height: 100px;
+    height: 100%;
     width: 100%;
     border-radius: 5px;
     object-fit: cover;
@@ -226,12 +235,12 @@ main .bottom {
 }
 
 .bottom .right .right-img {
-    height: 100px;
+    height: 35%;    
     width: 100%;
 }
 
 .bottom .right .right-img img {
-    height: 100px;
+    height: 100%;
     width: 100%;
     border-radius: 5px;
     object-fit: cover;
