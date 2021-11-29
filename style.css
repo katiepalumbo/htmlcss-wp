@@ -148,8 +148,10 @@ main .bottom {
 }
 
 .bottom .left .left-img {
-    height: 100px;
+    height: 35%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .bottom .left .left-img img {
@@ -157,20 +159,35 @@ main .bottom {
     width: 100%;
     border-radius: 5px;
     object-fit: cover;
+    padding: 0;
+    margin: 0;
 }
 
 .bottom .left .left-text {
     padding: 0;
     margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
-.bottom .left .left-text p {
+.bottom .text h4 {
+    position: absolute;
+    top: 110px;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.bottom .text p {
     position: absolute;
     left: 0;
-    top: 100;
+    top: 130px;
     padding: 0%;
     margin: 0%;
-    font-size: 8;
+    font-size: 0.6em;
+    font-weight: 100;
     object-fit: contain;
 }
 
