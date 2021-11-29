@@ -1,12 +1,6 @@
 * {
     box-sizing: border-box;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
 }
 
 p {
@@ -21,6 +15,8 @@ p {
     margin: auto;
 }
 
+/* regole header */
+
 header {
     position: relative;
     height: 80px;
@@ -33,7 +29,7 @@ header {
     position: absolute;
     top: 0;
     left: 12%;
-    border-left: 1px solid lightgrey;
+    border-left: 1px solid #d3d3d3;
     height: 40%;
     z-index: 2;
 
@@ -42,13 +38,18 @@ header {
 
 /*regole menu*/
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .menu ul {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 0;
     margin: 0;
-    color: lightgrey;
+    color: #d3d3d3;
     font-size: 12px;
 }
 
@@ -68,23 +69,6 @@ nav {
     margin-bottom: 100px;
 }
 
-
-
-main .top {
-    position: relative;
-    height: 300px;
-    background-color: #fff;
-    margin-top: 20px;
-
-}
-
-main .top img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
 /* regole overlay */
 
 .overlay {
@@ -102,6 +86,25 @@ main .top img {
     border-radius: 5px;
 }
 
+/* regole top bucket */
+
+main .top {
+    position: relative;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 20px;
+ 
+
+}
+
+main .top img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
 /* regole text top */
 
 .top h3 {
@@ -112,6 +115,7 @@ main .top img {
     font-style: normal;
     color: #fff;
     font-weight: 300;
+
 }
 
 .top p {
@@ -120,9 +124,15 @@ main .top img {
     left: 5%;
     width: 50%;
     color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 
 }
 
+/* regole bottom bucket */
 
 main .bottom {
     height: 400px;
@@ -152,8 +162,10 @@ main .bottom {
     vertical-align: top;
     padding: 0;
     margin: 0;
-    color: lightgrey;
+    color: #808080;
 }
+
+
 
 .bottom .left {
     position: absolute;
@@ -181,24 +193,6 @@ main .bottom {
     object-fit: cover;
     padding: 0;
     margin: 0;
-}
-
-
-.bottom .text h4 {
-    position: absolute;
-    top: 38%;
-    padding: 0;
-    margin: 0;
-    font-size: .8em;
-    font-weight: 100;
-}
-
-.bottom .text p {
-    position: absolute;
-    left: 0;
-    top: 43%;
-    object-fit: contain;
-    color: lightgrey;
 }
 
 .bottom .middle {
@@ -247,6 +241,25 @@ main .bottom {
     width: 100%;
     border-radius: 5px;
     object-fit: cover;
+}
+
+/* regole per il text bottom bucket*/
+
+.bottom .text h4 {
+    position: absolute;
+    top: 38%;
+    padding: 0;
+    margin: 0;
+    font-size: .8em;
+    font-weight: 100;
+}
+
+.bottom .text p {
+    position: absolute;
+    left: 0;
+    top: 43%;
+    object-fit: contain;
+    color: #808080;
 }
 
 div .bottom::after {
