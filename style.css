@@ -167,6 +167,7 @@ main .bottom {
 }
 
 .bottom .left .left-img {
+    position: relative;
     height: 35%;
     width: 100%;
     margin: 0;
@@ -212,6 +213,7 @@ main .bottom {
 }
 
 .bottom .middle .middle-img {
+    position: relative;
     height: 35%;
     width: 100%;
 }
@@ -227,7 +229,7 @@ main .bottom {
     position: absolute;
     top: 40px;
     right: 0;
-    background-color: #7fc2ce;
+    background-color: #fff;
     width: 20%;
     float: right;
     margin: 2% 0 2% 2%;
@@ -235,6 +237,7 @@ main .bottom {
 }
 
 .bottom .right .right-img {
+    position: relative;
     height: 35%;    
     width: 100%;
 }
